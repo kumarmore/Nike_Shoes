@@ -1,0 +1,135 @@
+/* Collections Page Styles */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for header */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Slightly larger logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.2s; /* Button transition */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav ul li a:hover {
+    background-color: #e50914; /* Highlight on hover */
+    transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 36px;
+    color: #ffffff; /* White title for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Collection Grid Styles */
+.collection-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow products to wrap to the next line */
+    justify-content: center; /* Center align product cards */
+    gap: 20px; /* Space between product cards */
+    padding: 20px;
+}
+
+/* Product Card Styles */
+.product-card {
+    width: 320px; /* Increased width for product cards */
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for cards */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners for cards */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Added shadow transition */
+    padding: 20px; /* Added padding for more space inside the card */
+    margin: 10px; /* Added margin to separate cards from each other */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Product Image Styles */
+.product-image {
+    width: 100%;
+    height: auto; /* Changed height to auto for flexibility */
+    max-height: 250px; /* Set a maximum height for images */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Added margin below the image */
+}
+
+/* Product Name and Price */
+.product-name {
+    font-size: 24px; /* Increased font size */
+    margin: 15px 0; /* Reduced margin above the name */
+    color: #333; /* Darker text color for readability */
+}
+
+.product-price {
+    font-size: 22px; /* Increased font size */
+    color: #e50914; /* Highlight price with the main color */
+    margin-bottom: 15px; /* Space below price */
+}
+
+/* Button Styles */
+.product-button {
+    background-color: #e50914; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Increased padding */
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Button animation on hover */
+}
+
+.product-button:hover {
+    background-color: #b40610; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff; /* Ensure footer text is visible on the background */
+    padding: 10px 0;
+}

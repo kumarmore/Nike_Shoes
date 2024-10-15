@@ -1,0 +1,153 @@
+/* Product Page Styles */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e50914;
+    border-radius: 5px;
+}
+
+/* Main Product Details */
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-gallery {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.thumbnail-images {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 160px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thumbnail-images img:hover {
+    border-color: #e50914; /* Highlight on hover */
+}
+
+/* Product Info */
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #e50914;
+}
+
+.product-description {
+    margin: 10px 0;
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.size-options button {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.size-options button:hover {
+    background-color: #e50914;
+    color: white;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.add-to-bag, .favourite {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-bag:hover {
+    background-color: #b40610;
+}
+
+.favourite {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.favourite:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
