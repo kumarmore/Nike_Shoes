@@ -54,7 +54,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../IMAGES/bg/bg1.jpg') no-repeat center center/cover;
+    background: url('IMAGES/bg/bg1.jpg') no-repeat center center/cover;
     color: rgb(255, 255, 255);
     text-align: center;
 }
