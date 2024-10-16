@@ -9,7 +9,7 @@
 body, html {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    color: #000
+    color: #000;
     position: relative;
     min-height: 100vh; /* Ensures the background covers the full viewport height */
     background: none; /* To remove default background */
@@ -17,7 +17,7 @@ body, html {
 
 body::before {
     content: '';
-/*     background-image: url('IMAGES/about_us/about_us.jpg'); */
+    /* background-image: url('IMAGES/about_us/about_us.jpg'); */
     background-color: #ccc5c5;
     background-size: cover;
     background-position: center;
@@ -112,4 +112,81 @@ footer {
     padding: 10px 0;
     background-color: #000;
     color: white;
+}
+
+/* Responsive Media Queries */
+
+/* Extra Small Devices (Phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+    .about-section h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Small Devices (Tablets, 576px to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .about-section h1 {
+        font-size: 32px;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+
+/* Medium Devices (Tablets and small desktops, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .about-section h1 {
+        font-size: 34px;
+    }
+
+    .about-content h2 {
+        font-size: 27px;
+    }
+}
+
+/* Large Devices (Desktops, 992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .about-section h1 {
+        font-size: 36px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+}
+
+/* Extra Large Devices (Large desktops, 1200px and above) */
+@media only screen and (min-width: 1200px) {
+    .about-section h1 {
+        font-size: 38px;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
 }
